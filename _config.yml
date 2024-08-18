@@ -3,12 +3,15 @@ theme: jekyll-theme-chirpy
 lang: zh-CN
 timezone: Asia/Shanghai
 
-title: Paclarz's Blog # the main title
+title: Paclarz # the main title
 tagline: Personal Tech Blog Site # it will display as the sub-title
 description: >- # used by seo meta and the atom feed
   Greetings! I am Paclarz, Chinese name is 熊晨宇(Xiong Chenyu), a software engineer , a tech enthusiast , leaning and working on computer science and tecnology. This is my personal tech blog site, where I will share my thoughts and experiences on software development, academic research, and life.
 
 url: "https://paclarz.github.io"
+
+qq:
+  url: https://qm.qq.com/q/cv3sbKPrRS
 
 github:
   username: paclarz # change to your github username
@@ -20,7 +23,7 @@ social:
   # Change to your full name.
   # It will be displayed as the default author of the posts and the copyright owner in the Footer
   name: paclarz
-  email: chenyu.xiong@domain.com # change to your email address
+  email: chenyu.xiong@qq.com # change to your email address
   links:
     # The first element serves as the copyright owner's link
     # - https://twitter.com/username # change to your twitter homepage

@@ -3,6 +3,7 @@ title: docker使用容器研究虚拟机的实现方法
 description: 不使用dockerfile，达到在终端中运行docker容器的效果。
 date: 2024-07-29 12:00:00
 categories: [problem, devtool]
+author: paclarz
 tags: [docker, virtual machine]
 ---
 
@@ -43,3 +44,5 @@ docker start ubuntu_bash_1
 # 进入容器
 docker attach ubuntu_bash_1
 ```
+
+退出系统时会自动停止容器。
