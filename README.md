@@ -9,3 +9,9 @@ this is a blog cloned from the chirpy-starter template.
 ```
 bundle exec jekyll s
 ```
+
+dockers 启动方式
+
+```
+docker compose up --build --watch
+```

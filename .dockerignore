@@ -1,0 +1,7 @@
+.github
+.dockerignore
+.editorconfig
+Dockerfile
+README.md
+
+docker-compose.yml

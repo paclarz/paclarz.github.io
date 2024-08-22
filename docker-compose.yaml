@@ -1,12 +1,12 @@
-version: '3.8'
-
 services:
   jekyll:
-    image: jekyll/jekyll
-    container_name: jekyll_site_1
-    volumes:
-      - .:/srv/jekyll:Z
+    build: .
+    container_name: jekyll_site_2
     ports:
       - "4000:4000"
-    command: jekyll serve
     restart: unless-stopped
+    develop:
+      watch:
+        - action: sync
+          path: ./
+          target: /srv/jekyll

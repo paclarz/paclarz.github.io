@@ -132,13 +132,13 @@ fi;
 
 ### Specific filename
 
+{: file='\_sass/jekyll-theme-chirpy.scss'}
+
 ```sass
 @import
   "colors/light-typography",
   "colors/dark-typography";
 ```
-
-{: file='\_sass/jekyll-theme-chirpy.scss'}
 
 ## Mathematics
 

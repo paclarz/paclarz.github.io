@@ -24,3 +24,11 @@ package-lock.json
 # Misc
 _sass/dist
 assets/js/dist
+
+
+.Ds_Store
+
+_site
+paclaz.github.io
+
+Gemfile.lock
