@@ -9,7 +9,7 @@ pin: false
 math: true
 mermaid: true
 image:
-  path: /assets\img\blogs\2024-08-19-windws-shell-config\final.png
+  path: /assets/img/blogs/2024-08-19-windws-shell-config/final.png
   alt: "windws shell 配置和美化"
 ---
 
@@ -112,7 +112,7 @@ Get-ExecutionPolicy
 
 1. 下载 windows terminal
 
-![download windows terminal](/assets\img\blogs\2024-08-19-windws-shell-config\install_wt.png){: width="400" }
+![download windows terminal](/assets/img/blogs/2024-08-19-windws-shell-config/install_wt.png){: width="400" }
 _下载 windows terminal_
 
 2. 查看配置文件位置
@@ -240,7 +240,7 @@ Set-ExecutionPolicy Bypass -Scope Process -Force; Invoke-Expression ((New-Object
 
 此时，排除此文件中可能已有的 clear 或者 echo 命令，当启动 shell 的时候至少已经看到全新的 posh 提示了。
 
-![oh-my-posh init](/assets\img\blogs\2024-08-19-windws-shell-config\init_posh.png){: width="800" }
+![oh-my-posh init](/assets/img/blogs/2024-08-19-windws-shell-config/init_posh.png){: width="800" }
 _oh-my-posh 初始化_
 
 至此，oh-my-posh 安装完成，接下来安装自定义主题。
@@ -259,7 +259,7 @@ _oh-my-posh 初始化_
 
 选定后，能够在刚刚解压的安装包中找到名字对应的 json 文件。
 
-![select themes](/assets\img\blogs\2024-08-19-windws-shell-config\select_theme.png){: width="500" }
+![select themes](/assets/img/blogs/2024-08-19-windws-shell-config/select_theme.png){: width="500" }
 _选择主题_
 
 3.设置主题配置文件
@@ -343,19 +343,19 @@ display_center("C:\data\Documents\WindowsPowerShell\myname.txt")
 
 ```
 
-![oh-my-posh done](/assets\img\blogs\2024-08-19-windws-shell-config\posh_done.png){: width="800" }
+![oh-my-posh done](/assets/img/blogs/2024-08-19-windws-shell-config/posh_done.png){: width="800" }
 _oh-my-posh 配置完成_
 
 ## 补充
 
 ### windows terminal 设置
 
-![windows terminal settings](/assets\img\blogs\2024-08-19-windws-shell-config\entry_of_setting.png){: width="500" }
+![windows terminal settings](/assets/img/blogs/2024-08-19-windws-shell-config/entry_of_setting.png){: width="500" }
 _windows terminal 设置入口_
 
 进入设置页面，先从左侧导航栏选择 powershell，在在右侧找到`外观`进入子菜单
 
-![windows terminal settings](/assets\img\blogs\2024-08-19-windws-shell-config\setting_1.png){: width="500" }
+![windows terminal settings](/assets/img/blogs/2024-08-19-windws-shell-config/setting_1.png){: width="500" }
 _windows terminal 设置_
 
 - 字体：选择上述安装的 nerd font 字体
@@ -365,5 +365,5 @@ _windows terminal 设置_
 
 ### 最终效果
 
-![windows terminal done](/assets\img\blogs\2024-08-19-windws-shell-config\final.png){: width="800" }
+![windows terminal done](/assets/img/blogs/2024-08-19-windws-shell-config/final.png){: width="800" }
 _windows terminal 终端效果_
