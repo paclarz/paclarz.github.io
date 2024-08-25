@@ -9,7 +9,7 @@
     ".dockerignore": true,
     ".editorconfig": true,
     ".gitattributes": true,
-    ".gitignore": true,
+    ".gitignore": false,
     ".gitmodules": true,
     ".nojekyll": true,
     "docker-compose.yaml": true,
