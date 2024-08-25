@@ -17,7 +17,6 @@ package-lock.json
 
 # IDE configurations
 .idea
-.vscode
 !.vscode/settings.json
 !.vscode/extensions.json
 
@@ -26,7 +25,7 @@ _sass/dist
 assets/js/dist
 
 
-.Ds_Store
+.DS_Store
 
 _site
 paclaz.github.io
