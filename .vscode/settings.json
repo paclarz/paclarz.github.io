@@ -1,23 +1,27 @@
 {
   "files.exclude": {
-    "_data": true,
-    "_plugins": true,
-    "_tabs": true,
-    ".git": true,
-    ".github": true,
-    "assets": true,
+    "**/.git": true,
+    "**/.svn": true,
+    "**/.hg": true,
+    "**/CVS": true,
+    "**/.DS_Store": true,
+    "**/Thumbs.db": true,
+    "_data/**": true,
+    "_plugins/**": true,
+    ".github/**": true,
     ".dockerignore": true,
     ".editorconfig": true,
     ".gitattributes": true,
-    ".gitignore": false,
+    ".gitignore": true,
     ".gitmodules": true,
     ".nojekyll": true,
-    "docker-compose.yaml": true,
-    "dockerfile": true,
-    "Gemfile": false,
+    "Gemfile": true,
     "index.html": true,
     "LICENSE": true,
     "README.md": true,
-    "_config.yml": false
+    "assets/img/favicons": true,
+    "backup/**": true,
+    "docker-compose.yaml": true,
+    "dockerfile": true
   }
 }

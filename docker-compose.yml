@@ -1,0 +1,12 @@
+services:
+  jekyll-docker-4:
+    build: .
+    container_name: jekyll-docker-4
+    ports:
+      - "4000:4000"
+    restart: unless-stopped
+    develop:
+      watch:
+        - action: sync
+          path: ./
+          target: /app/jekyll

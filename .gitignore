@@ -17,6 +17,7 @@ package-lock.json
 
 # IDE configurations
 .idea
+.vscode
 !.vscode/settings.json
 !.vscode/extensions.json
 
@@ -25,8 +26,8 @@ _sass/dist
 assets/js/dist
 
 
-.DS_Store
+.Ds_Store
 
-_site
 paclaz.github.io
 
+Gemfile.lock
