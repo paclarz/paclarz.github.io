@@ -1,7 +1,7 @@
 services:
-  jekyll-docker-4:
+  jekyll:
     build: .
-    container_name: jekyll-docker-4
+    container_name: paclarz.github.io
     ports:
       - "4000:4000"
     restart: unless-stopped

@@ -12,7 +12,7 @@
     ".dockerignore": true,
     ".editorconfig": true,
     ".gitattributes": true,
-    ".gitignore": false,
+    ".gitignore": true,
     ".gitmodules": true,
     ".nojekyll": true,
     "Gemfile": true,
@@ -21,8 +21,11 @@
     "README.md": true,
     "assets/img/favicons": true,
     "backup/**": true,
-    "docker-compose.yaml": true,
-    "dockerfile": true
+    "docker-compose.yml": false,
+    "dockerfile": true,
+    "tools/**": false,
+    ".devcontainer/**": true,
+    "_tabs/**": true
   },
   // Prettier
   "editor.defaultFormatter": "esbenp.prettier-vscode",

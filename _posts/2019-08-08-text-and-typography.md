@@ -1,9 +1,9 @@
 ---
 title: Text and Typography
-description: Examples of text, typography, math equations, diagrams, flowcharts, pictures, videos, and more.
+description: 文本来自官方示例文档，仅作备份。
 date: 2019-08-08 11:33:00 +0800
-categories: [backup, blog]
-tags: [typography]
+categories: [blog]
+tags: [blog,markdown]
 author: cotes
 pin: false
 math: true

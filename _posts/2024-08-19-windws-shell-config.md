@@ -2,9 +2,8 @@
 title: windws shell 配置和美化
 description: windows shell 配置和美化
 date: 2024-08-19
-categories: [record, application]
+categories: [record,shell]
 tags: [windows, shell, config, oh-my-posh]
-
 pin: false
 math: true
 mermaid: true
