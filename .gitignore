@@ -31,3 +31,11 @@ assets/js/dist
 paclaz.github.io
 
 Gemfile.lock
+.vscode/*
+!.vscode/settings.json
+!.vscode/extensions.json
+!.vscode/tasks.json
+
+# Misc
+_sass/vendors
+assets/js/dist

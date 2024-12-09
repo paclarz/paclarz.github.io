@@ -12,7 +12,7 @@
     ".dockerignore": true,
     ".editorconfig": true,
     ".gitattributes": true,
-    ".gitignore": true,
+    ".gitignore": false,
     ".gitmodules": true,
     ".nojekyll": true,
     "Gemfile": true,
@@ -23,5 +23,33 @@
     "backup/**": true,
     "docker-compose.yaml": true,
     "dockerfile": true
+  },
+  // Prettier
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+  // Shopify Liquid
+  "files.associations": {
+    "*.html": "liquid"
+  },
+  "[markdown]": {
+    "editor.defaultFormatter": "yzhang.markdown-all-in-one"
+  },
+  // Formatter
+  "[html][liquid]": {
+    "editor.defaultFormatter": "Shopify.theme-check-vscode"
+  },
+  "[shellscript]": {
+    "editor.defaultFormatter": "mkhl.shfmt"
+  },
+  // Disable vscode built-in stylelint
+  "css.validate": false,
+  "scss.validate": false,
+  "less.validate": false,
+  // Stylint extension settings
+  "stylelint.snippet": ["css", "scss"],
+  "stylelint.validate": ["css", "scss"],
+  // Run tasks in macOS
+  "terminal.integrated.profiles.osx": {
+    "zsh": { "path": "/bin/zsh", "args": ["-l", "-i"] }
   }
 }
