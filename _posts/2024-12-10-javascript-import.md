@@ -2,7 +2,7 @@
 title: javascript import export 问题
 description: javascript import export 问题
 date: 2024-12-10 12:00:00 +0800
-categories: [problem, language]
+categories: [Problem,javascript]
 tags: [javascript]
 author: paclarz
 ---

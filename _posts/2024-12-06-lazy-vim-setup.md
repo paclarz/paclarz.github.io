@@ -2,7 +2,7 @@
 title: lazy vim setup 接口问题
 description: lazy vim对插件的对接问题
 date: 2024-12-06 12:00:00 +0800
-categories: [problem, application]
+categories: [Problem, lazyvim]
 tags: [neovim,lazyvim]
 author: paclarz
 ---
@@ -67,12 +67,9 @@ return {
 这里是最规范的文件，同时是后文中最有可能方案的来源。
 这里展示的代码是后续内容的基础，暂时不深入。
 
-
 #### init文件
 
-
 这个文件是lazyvim的启动文件，在[官网](https://www.lazyvim.org/configuration/lazy.nvim)同样有详细描述
-
 
 ``` lua
 ...
@@ -151,9 +148,7 @@ return {
     end
 }
 
-
 ```
-
 
 #### 暂行解决方案
 
@@ -166,27 +161,19 @@ return {
     lazy = false,
     name = "catppuccin",
     priority = 1000,
-
     opts = custom_opts, -- 无效
-
     config = function()
-
   require("catppuccin").setup({ -- succ
       flavour = "latte" -- latte, frappe, macchiato 
   })
   vim.cmd.colorscheme "catppuccin"
-
-
         require("catppuccin").setup(custom_opts)
         -- vim.cmd.colorscheme "catppuccin"
         vim.cmd([[colorscheme catppuccin]])
-
     end
 }
 
-
 ```
-
 
 #### cappucin官方
 
@@ -234,11 +221,7 @@ return {
 
 属于一个全新的入口，但也实在疲于探索了
 
-
-
-
 ## 主要研究
-
 
 ``` lua
 
@@ -273,8 +256,6 @@ return {
     -- init = function() 
     --     return  { flavour = "latte" }
     -- end,
-
-
 
     config = function()
 

@@ -2,7 +2,7 @@
 title: Linux 
 description: 一些linux基础的app使用
 date: 2024-07-28 12:00:00 +0800
-categories: [record]
+categories: [Record]
 tags: [linux, app]
 author: paclarz
 ---
@@ -15,27 +15,26 @@ author: paclarz
 
 ## 镜像
 
-给各个 linux 发行版配置官方镜像
-
-### ubuntu
+### 环境配置
 
 ```bash
+
+# 清华源 - 已验证
+RUN sed -i 's/archive.ubuntu.com/mirrors.tuna.tsinghua.edu.cn/g' /etc/apt/sources.list  
+
+# 华为云
 sudo sed -i "s@//.*archive.ubuntu.com@//mirrors.huaweicloud.com@g" /etc/apt/sources.list.d/ubuntu.sources
 
-
-#ubuntu ports 适用于arm版本
+# 华为云ports 适用于arm版本
 sudo sed -i "s@//.*ports.ubuntu.com@//mirrors.huaweicloud.com@g" /etc/apt/sources.list
 
 ```
 
-## 文件下载
+## TODOs
 
-### curl
+- [ ] curl文件下载
 
-### wget
+- [ ] wget
 
-## 压缩
+- [ ] 压缩/tar/7zip
 
-### tar
-
-### 7zip

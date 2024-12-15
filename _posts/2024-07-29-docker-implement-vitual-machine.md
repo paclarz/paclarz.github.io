@@ -2,7 +2,7 @@
 title: docker使用容器研究虚拟机的实现方法
 description: 不使用dockerfile，达到在终端中运行docker容器的效果。
 date: 2024-07-29 12:00:00 +0800
-categories: [problem, docker]
+categories: [Problem, docker]
 author: paclarz
 tags: [docker, virtual machine]
 ---
@@ -46,3 +46,12 @@ docker attach ubuntu_bash_1
 ```
 
 退出系统时会自动停止容器。
+
+
+## TODOs
+
+
+
+> Dec. 3th. 2024
+
+在docker开发过程中，更改例如`.vscode`文件夹下的内容，有没有被docker正确忽略

@@ -2,7 +2,7 @@
 title: Text and Typography
 description: 文本来自官方示例文档，仅作备份。
 date: 2019-08-08 11:33:00 +0800
-categories: [blog]
+categories: [Blog]
 tags: [blog,markdown]
 author: cotes
 pin: false

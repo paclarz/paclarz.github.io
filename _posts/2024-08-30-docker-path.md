@@ -2,7 +2,7 @@
 title: docker 环境变量问题
 description: 在使用dockerfile配置环境变量遇到的问题和完美的docker-jekyll开发环境。
 date: 2024-09-01 12:00:00 +0800
-categories: [problem,docker]
+categories: [Problem, docker]
 tags: [docker]
 author: paclarz
 image:

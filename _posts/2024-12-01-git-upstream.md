@@ -2,7 +2,7 @@
 title: git upstream
 description: git的upstream两种实现方法研究
 date: 2024-12-01 12:00:00 +0800
-categories: [problem, fundamental]
+categories: [Problem, git]
 tags: [git]
 author: paclarz
 ---
@@ -67,7 +67,7 @@ From github.com:cotes2020/chirpy-starter
 
 > `TODO` 这里的tag同样也是一个知识点 
 
-2. 创建并切换到upstream_main分支,并切换到v7.2.1准备合并
+1. 创建并切换到upstream_main分支,并切换到v7.2.1准备合并
 
 ```bash
 
@@ -98,7 +98,7 @@ Date:   Thu Nov 28 09:00:29 2024 +0000
 
 ```
 
-3. 回到main分支，合并upstream_main分支
+1. 回到main分支，合并upstream_main分支
 
 ```bash
 
@@ -123,11 +123,11 @@ CONFLICT (add/add): Merge conflict in _config.yml
 
 ```
 
-4. 解决冲突，提交代码
+1. 解决冲突，提交代码
 
 ### 方法二：配置main分支的上游分支
 
-1. 按照上一节的方法，配置upstream仓库，并拉取相关代码，达到如下效果
+2. 按照上一节的方法，配置upstream仓库，并拉取相关代码，达到如下效果
 ```bash
 
 ➜ git branch -vv
@@ -159,7 +159,7 @@ Automatic merge failed; fix conflicts and then commit the result.
 
 这样我们就没有依赖新的branch也成功进行了合并。
 
-3. 解决冲突，提交代码
+2. 解决冲突，提交代码
 
 ## 总结
 

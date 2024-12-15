@@ -1,25 +1,11 @@
 ---
-title: blog开发问题记录
+title: jekyll 重复使用icon配置文件报错问题
 description: 本博客开发问题的记录
 date: 2024-12-01 12:00:00 +0800
-categories: [problem, blog]
-tags: [blog]
-pin: false
+categories: [Problem, jekyll]
+tags: [jekyll,unsolved]
 author: paclarz
 ---
-
-
-## 说明
-
-本文件由于记录各种TODOs和博客开发过程中遇到的（临时）待解决问题。
-
-## Blog问题
-
-#### dockerignore 问题
-
-> Dec. 3th. 2024
-
-在docker开发过程中，更改例如`.vscode`文件夹下的内容，有没有被docker正确忽略
 
 #### docker控制台报错问题
 
@@ -55,9 +41,3 @@ github连接[https://github.com/jekyll/jekyll/issues/8522]
 原版删除`\paclarz.github.io\assets\img\favicons\`下文件的开头的`change_`即可。
 
 
-
-## TODOs
-
-#### git
-
-* git两次合并问题：之前已经合并过的文件如何重新合并

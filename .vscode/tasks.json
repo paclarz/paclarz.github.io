@@ -9,7 +9,7 @@
         "kind": "build",
         "isDefault": true
       },
-      "problemMatcher": [],
+      "ProblemMatcher": [],
       "detail": "Runs the Jekyll server with live reload."
     },
     {
@@ -19,7 +19,7 @@
       "group": {
         "kind": "build"
       },
-      "problemMatcher": [],
+      "ProblemMatcher": [],
       "detail": "Build the Jekyll site for production."
     }
   ]

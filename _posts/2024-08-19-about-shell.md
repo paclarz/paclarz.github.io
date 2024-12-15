@@ -2,7 +2,7 @@
 title: Shell 
 description: windows shell 配置和美化
 date: 2024-08-19
-categories: [record]
+categories: [Record]
 tags: [windows, shell]
 image:
   path: /assets/img/blogs/2024-08-19-windws-shell-config/final.png

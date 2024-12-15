@@ -2,7 +2,7 @@
 title: Neovim
 description: 使用Docker搭建Neovim开发环境.
 date: 2024-07-28 12:00:00 +0800
-categories: [record]
+categories: [Record]
 tags: [neovim, docker]
 author: paclarz
 ---
@@ -15,11 +15,73 @@ author: paclarz
 
 在各个 neovim 的发行版中，最终选择应当使用 lazyvim。因为这个插件本身几乎是必须的，懒加载功能和包管理功能几乎是一切的基础。约等于官方版本
 
-- lazyvim 的配置
-- lsp 的配置使用
-- lua 语言
-- debug 配置
-- goto definition 的配置
-- vim 操作熟练
+
+## 研究环境
+
+使用docker作为开发环境
+
+
+```Dockerfile
+FROM ubuntu:22.04
+
+RUN sed -i 's/archive.ubuntu.com/mirrors.tuna.tsinghua.edu.cn/g' /etc/apt/sources.list  
+
+RUN apt update 
+
+RUN apt upgrade -y
+
+RUN apt install -y curl git 
+RUN apt install -y curl build-essential 
+
+RUN apt install -y curl ripgrep fd-find
+
+ENV PATH="/root/app/node20/bin:/root/app/nvim/bin:${PATH}"
+
+
+WORKDIR /root
+
+```
+
+使用docker-compose启动容器
+
+```yaml
+services:
+  ubuntu_service:
+    build: . # 从当前目录构建 Docker 镜像
+    container_name: neovim_container_1
+    volumes:
+      - ./mount:/root # 将当前目录下的 mount 文件夹挂载到容器的 /root 文件夹
+    entrypoint: /bin/bash -c "exec bash"
+    tty: true
+    stdin_open: true
+```
+
+运行 `docker-compose up` 启动容器
+
+## 工程结构
+
+此处位于docker容器内，用户根目录的`.config`文件下
+
+```
+\---nvim
+    |   init.lua                        ---入口文件
+        ...
+    |
+    \---lua
+        +---config                      ---全局、lazy配置，启动文件夹
+        |       lazy.lua
+        |       nvim.lua
+        |       setup.lua
+        |
+        \---plugins
+                catppuccin.lua          ---插件文件夹
+                lsp.lua
+                ...
+```
 
 ## TODOs
+
+
+> 3rd Dec. 2024
+
+* git两次合并问题：之前已经合并过的文件如何重新合并

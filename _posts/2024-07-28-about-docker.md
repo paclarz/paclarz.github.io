@@ -2,7 +2,7 @@
 title: Docker
 description: Docker 相关操作记录
 date: 2024-07-28 12:00:00 +0800
-categories: [record]
+categories: [Record]
 tags: [docker]
 author: paclarz
 ---
@@ -15,17 +15,14 @@ docker 貌似仍然算是一个新兴技术
 
 因此应当更加深入的研究，更好的使用。
 
-- 容器和镜像
-- dockerfile，dcker-compose
-- dockerhub
-- 个人镜像仓库
-
-## TODOs
-
-[ ] 端口问题
-[ ] 环境安装与服务
-
 ## 基本使用
+
+### 环境配置
+
+```bash
+# ubuntu
+RUN sed -i 's/archive.ubuntu.com/mirrors.tuna.tsinghua.edu.cn/g' /etc/apt/sources.list  
+```
 
 ### 拷贝文件
 
@@ -38,26 +35,18 @@ docker cp ./README.md my-container:/home/
 
 ### 配置 Path 文件
 
+1.使用命令
+
+```bash
+ENV PATH="/root/app/node20/bin:/root/app/nvim/bin:${PATH}"
+```
+
+1. 在容器内部编辑source文件（不规范）
+
 ```bash
 echo "export PATH=\$PATH:/home/nvim-linux64/bin" >> ./pathFile
 echo "export PATH=\$PATH:/home/node-v18.20.4-linux-arm64/bin" >> ./pathFile
 source ~/pathFile
 ```
 
-## 情景问题
 
-#### 终端进入容器
-
-{: .prompt-warning }
-
-> 结论:从一个镜像创建容器时，如果该容器没有持续运行的 cmd，就无法通过 exec 终端连接容器。
-
-1. 准备:选择基础镜像
-
-使用命令`docker pull <image>`拉取镜像，如`docker pull ubuntu:22.04`拉取 ubuntu 镜像。
-
-2. 创建容器
-
-- 情况一：直接从镜像启动 bash，即创建一个新容器
-
-- 情况二：从一个有持续运行的命令的容器开始，使用 exec 进入容器。
