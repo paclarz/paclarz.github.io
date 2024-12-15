@@ -1,13 +1,10 @@
 ---
 title: git upstream
 description: git的upstream两种实现方法研究
-date: 2024-12-01 12:00:00
-categories: [problem, git]
+date: 2024-12-01 12:00:00 +0800
+categories: [problem, fundamental]
 tags: [git]
-pin: false
 author: paclarz
-math: true
-mermaid: true
 ---
 
 ## 问题来源

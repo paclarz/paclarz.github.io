@@ -1,13 +1,10 @@
 ---
 title: Neovim
 description: 使用Docker搭建Neovim开发环境.
-date: 2024-07-28 12:00:00
-categories: [record, application]
+date: 2024-07-28 12:00:00 +0800
+categories: [record]
 tags: [neovim, docker]
 author: paclarz
-pin: false
-math: true
-mermaid: true
 ---
 
 ## 前言

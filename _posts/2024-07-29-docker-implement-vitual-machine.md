@@ -1,7 +1,7 @@
 ---
 title: docker使用容器研究虚拟机的实现方法
 description: 不使用dockerfile，达到在终端中运行docker容器的效果。
-date: 2024-07-29 12:00:00
+date: 2024-07-29 12:00:00 +0800
 categories: [problem, docker]
 author: paclarz
 tags: [docker, virtual machine]

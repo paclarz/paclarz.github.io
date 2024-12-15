@@ -1,13 +1,10 @@
 ---
-title: app usage
-description: 一些linux基础的app使用.
-date: 2024-07-28
-categories: [record,linux]
+title: Linux 
+description: 一些linux基础的app使用
+date: 2024-07-28 12:00:00 +0800
+categories: [record]
 tags: [linux, app]
-pin: false
 author: paclarz
-math: true
-mermaid: true
 ---
 
 ## 前言

@@ -1,12 +1,9 @@
 ---
-title: windws shell 配置和美化
+title: Shell 
 description: windows shell 配置和美化
 date: 2024-08-19
-categories: [record,shell]
-tags: [windows, shell, config, oh-my-posh]
-pin: false
-math: true
-mermaid: true
+categories: [record]
+tags: [windows, shell]
 image:
   path: /assets/img/blogs/2024-08-19-windws-shell-config/final.png
   alt: "windws shell 配置和美化"

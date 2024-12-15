@@ -1,13 +1,10 @@
 ---
 title: Docker
-description: Docker 相关操作记录.
-date: 2024-07-28 12:00:00
-categories: [record, docker]
+description: Docker 相关操作记录
+date: 2024-07-28 12:00:00 +0800
+categories: [record]
 tags: [docker]
-pin: false
 author: paclarz
-math: true
-mermaid: true
 ---
 
 ## 前言
